@@ -14,7 +14,7 @@ export default function MobileMenu() {
   return (
     <div className="relative">
       <details ref={detailsRef} className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-center rounded-md bg-amber-500 p-2 text-red-900 hover:bg-amber-400">
+        <summary className="flex cursor-pointer items-center justify-center rounded-md bg-gray-700 p-2 text-white hover:bg-gray-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -33,53 +33,60 @@ export default function MobileMenu() {
           </svg>
         </summary>
 
-        <div className="absolute right-0 z-10 mt-3 w-56 rounded-md border border-amber-500 bg-red-800 shadow-lg">
+        <div className="absolute right-0 z-10 mt-3 w-56 rounded-md border border-gray-200 bg-white shadow-lg">
           <div className="p-2">
             <a
-              href="#inicio"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
-              onClick={handleLinkClick}
-            >
-              Inicio
-            </a>
-            <a
               href="#destacados"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Destacados
             </a>
             <a
               href="#sobre-mi"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Sobre Mí
             </a>
             <a
+              href="#ultimo-video"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
+              onClick={handleLinkClick}
+            >
+              Último Video
+            </a>
+            <a
               href="#casita-rural"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Casita Rural
             </a>
             <a
               href="#gente-con-pasion"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Gente con Pasión
             </a>
             <a
               href="#viajes-en-moto"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Viajes en Moto
             </a>
             <a
+              href="#bitacora-podcast"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
+              onClick={handleLinkClick}
+            >
+              Bitácora Podcast
+            </a>
+            <a
               href="#contacto"
-              className="block rounded-lg px-4 py-2 text-amber-400 hover:bg-red-700"
+              className="block rounded-lg px-4 py-2 text-gray-600 hover:bg-[#f2e6cf]"
               onClick={handleLinkClick}
             >
               Contacto

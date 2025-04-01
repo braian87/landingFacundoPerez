@@ -20,7 +20,7 @@ export default function FeaturedVideoCard({ id, title, description, views, date,
   }
 
   return (
-    <div className="bg-red-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-amber-500 h-full flex flex-col">
+    <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 h-full flex flex-col">
       <div className="relative aspect-video w-full overflow-hidden">
         {!showVideo ? (
           <>
@@ -32,7 +32,7 @@ export default function FeaturedVideoCard({ id, title, description, views, date,
             <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-colors">
               <button
                 onClick={handleClick}
-                className="bg-red-600 hover:bg-red-700 text-white rounded-full p-4 transition-transform hover:scale-110"
+                className="bg-gray-800 hover:bg-gray-700 text-white rounded-full p-4 transition-transform hover:scale-110"
                 aria-label="Reproducir video"
               >
                 <Play className="h-6 w-6 fill-white" />
@@ -50,9 +50,9 @@ export default function FeaturedVideoCard({ id, title, description, views, date,
         )}
       </div>
       <div className="p-6 flex-grow flex flex-col">
-        <h3 className="text-xl font-semibold text-amber-400 mb-3">{title}</h3>
-        {description && <p className="text-amber-100 mb-4">{description}</p>}
-        <div className="mt-auto flex items-center text-sm text-amber-200">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
+        {description && <p className="text-gray-600 mb-4">{description}</p>}
+        <div className="mt-auto flex items-center text-sm text-gray-500">
           <span>{views} vistas</span>
           <span className="mx-2">•</span>
           <span>{date}</span>

@@ -16,8 +16,8 @@ interface VideoSectionProps {
 export default function VideoSection({ title, description, videos }: VideoSectionProps) {
   return (
     <div>
-      <h2 className="text-3xl md:text-4xl font-bold text-amber-400 text-center mb-4">{title}</h2>
-      <p className="text-amber-100 text-center max-w-4xl mx-auto mb-12">{description}</p>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-600 text-center mb-4">{title}</h2>
+      <p className="text-gray-500 text-center max-w-4xl mx-auto mb-12">{description}</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {videos.map((video, index) => (
