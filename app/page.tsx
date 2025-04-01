@@ -10,9 +10,9 @@ import PodcastSection from "@/components/podcast-section"
 import YouTubeButton from "@/components/youtube-button"
 
 export default function Home() {
-  const whatsappNumber = "+5491163604558"
+  const whatsappNumber = "+549112345678"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
-  const emailAddress = "braianifran87@gmail.com"
+  const emailAddress = "contactofeperez@gmail.com"
   const youtubeChannelUrl = "https://www.youtube.com/@faqundoperez"
 
   // Latest video
@@ -200,7 +200,7 @@ export default function Home() {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "https://landingfacundoperez.vercel.app/logo.png",
+      image: "/logo.png",
       relatedVideos: [
         {
           id: "QBdGTB9K42U",
@@ -503,13 +503,8 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-gray-600 mb-6">Información de Contacto</h3>
 
                 <div className="space-y-4 text-gray-500">
-                  <p className="flex items-center gap-3">
-                    <MessageCircle className="text-gray-600" />
-                    <span>WhatsApp: </span>
-                    <a href={whatsappUrl} className="text-gray-600 hover:underline">
-                      {whatsappNumber}
-                    </a>
-                  </p>
+  
+                 {/* aqui iba link de whatsapp*/}
 
                   <p className="flex items-center gap-3">
                     <svg
@@ -526,7 +521,7 @@ export default function Home() {
                     >
                       <rect width="20" height="16" x="2" y="4" rx="2" />
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
+                    </svg> 
                     <span>Email: </span>
                     <a href={`mailto:${emailAddress}`} className="text-gray-600 hover:underline">
                       {emailAddress}
