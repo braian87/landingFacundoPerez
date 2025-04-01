@@ -185,7 +185,7 @@ export default function Home() {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "https://landingfacundoperez.vercel.app/logo.png",
+      image: "/facundo.png",
       relatedVideos: [
         {
           id: "QBdGTB9K42U",
