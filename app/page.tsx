@@ -185,7 +185,7 @@ export default function Home() {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "https://images.unsplash.com/photo-1581262177000-8139a463e531?q=80&w=1000", // Example profile image
+      image: "/logo.png", // Example profile image
       relatedVideos: [
         {
           id: "dQw4w9WgXcQ", // Example YouTube video ID
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="flex flex-col items-center mb-8">
             {/* Replace with actual profile image or use a placeholder */}
             <img
-              src="https://via.placeholder.com/150"
+              src="/facu.png"
               alt="Facundo Perez"
               width={150}
               height={150}
