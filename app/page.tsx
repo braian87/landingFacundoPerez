@@ -22,56 +22,56 @@ export default function Home() {
       thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "QBdGTB9K42U", // Example YouTube video ID
       title: "TRABAJAMOS a Full en el Proyecto RURAL ¡Y el RESULTADO es INCREÍBLE!",
       description: "Un día productivo trabajando en nuestra casita rural, mostrando todo el proceso y los avances.",
       views: "8.2K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "g_DY8nygLb0", // Example YouTube video ID
       title: "We build a Wooden Wall! - Rurallife Project",
       description: "Construimos una pared de madera para nuestra casa rural, mostrando todo el proceso paso a paso.",
       views: "15K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg", // Using actual YouTube thumbnail
     },
   ]
 
   // Casita Rural videos with actual YouTube embed IDs
   const casitaRuralVideos = [
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "6wlC91nseIM", // Example YouTube video ID
       title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
       description: "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina.",
-      views: "5.6K",
+      views: "5.6K", 
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "QBdGTB9K42U", // Example YouTube video ID
       title: "TRABAJAMOS a Full en el Proyecto RURAL ¡Y el RESULTADO es INCREÍBLE!",
       description: "Un día productivo trabajando en nuestra casita rural, mostrando todo el proceso y los avances.",
       views: "8.2K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "g_DY8nygLb0", // Example YouTube video ID
       title: "We build a Wooden Wall! - Rurallife Project",
       description: "Construimos una pared de madera para nuestra casa rural, mostrando todo el proceso paso a paso.",
       views: "15K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "HAaQNvzMnzs", // Example YouTube video ID
       title: "Desafío Bajo el Sol! Trabajando en Nuestra Casita Rural",
       description: "Trabajando bajo el intenso sol para avanzar en nuestro proyecto de casa rural.",
       views: "10K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/HAaQNvzMnzs/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
       id: "dQw4w9WgXcQ", // Example YouTube video ID
