@@ -7,12 +7,12 @@ interface FeaturedVideoCardProps {
   id: string
   title: string
   description?: string
-  views: string
-  date: string
+  
+ 
   thumbnail: string
 }
 
-export default function FeaturedVideoCard({ id, title, description, views, date, thumbnail }: FeaturedVideoCardProps) {
+export default function FeaturedVideoCard({ id, title, description, thumbnail }: FeaturedVideoCardProps) {
   const [showVideo, setShowVideo] = useState(false)
 
   const handleClick = () => {
@@ -51,12 +51,7 @@ export default function FeaturedVideoCard({ id, title, description, views, date,
       </div>
       <div className="p-6 flex-grow flex flex-col">
         <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
-        {description && <p className="text-gray-600 mb-4">{description}</p>}
-        <div className="mt-auto flex items-center text-sm text-gray-500">
-          <span>{views} vistas</span>
-          <span className="mx-2">•</span>
-          <span>{date}</span>
-        </div>
+        {description && <p className="text-gray-600 mb-4">{description}</p>
       </div>
     </div>
   )
