@@ -200,7 +200,7 @@ export default function Home() {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "/logo.png",
+      image: "/facundo1.png",
       relatedVideos: [
         {
           id: "QBdGTB9K42U",
@@ -488,6 +488,7 @@ export default function Home() {
 
         {/* Bitácora Podcast Section */}
         <section id="bitacora-podcast" className="py-16 md:py-24 cream-bg">
+          <img src="/bitacora.png" />
           <div className="container mx-auto px-4">
             <PodcastSection />
           </div>
