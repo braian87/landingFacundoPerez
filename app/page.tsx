@@ -15,15 +15,13 @@ export default function Home() {
   const emailAddress = "contactofeperez@gmail.com"
   const youtubeChannelUrl = "https://www.youtube.com/@faqundoperez"
 
-  // Latest video
+  // Latest video 
   const latestVideo = {
-    id: "6wlC91nseIM",
+    id: "6dIs-XSeW1o",
     title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
     description:
       "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina. Descubre todo el proceso paso a paso y los resultados finales.",
-    views: "5.6K",
-    date: "1 month ago",
-    thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/6dIs-XSeW1o/maxresdefault.jpg",
   }
 
   // Update the featured videos with correct YouTube IDs
