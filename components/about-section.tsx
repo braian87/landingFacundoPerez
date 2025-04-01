@@ -29,7 +29,7 @@ export default function AboutSection({ title, content, image, imagePosition, rel
         </div>
         <div className="md:w-1/2">
           <div className="relative h-64 md:h-80 w-full rounded-xl overflow-hidden shadow-lg border-2 border-amber-500">
-            <Image src={image || "https://via.placeholder.com/800x600"} alt={title} fill className="object-cover" />
+            <Image src={image || "/logo.png"} alt={title} fill className="object-cover" />
           </div>
         </div>
       </div>
