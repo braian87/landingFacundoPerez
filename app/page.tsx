@@ -279,7 +279,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Replace with actual logo or use a placeholder */}
             <img
-              src="https://via.placeholder.com/50"
+              src="/logo.png"
               width={50}
               height={50}
               className="rounded-full"
