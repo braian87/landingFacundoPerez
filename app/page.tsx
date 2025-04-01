@@ -1,15 +1,30 @@
 import { MessageCircle, Youtube } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import VideoSection from "@/components/video-section"
-import WhatsAppButton from "@/components/whatsapp-button"
 import MobileMenu from "@/components/mobile-menu"
 import AboutSection from "@/components/about-section"
 import FeaturedVideoCard from "@/components/featured-video-card"
 import SocialLinks from "@/components/social-links"
+import LatestVideo from "@/components/latest-video"
+import PodcastSection from "@/components/podcast-section"
+import YouTubeButton from "@/components/youtube-button"
 
 export default function Home() {
   const whatsappNumber = "+5491163604558"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
+  const emailAddress = "braianifran87@gmail.com"
+  const youtubeChannelUrl = "https://www.youtube.com/@faqundoperez"
+
+  // Latest video
+  const latestVideo = {
+    id: "6wlC91nseIM",
+    title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
+    description:
+      "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina. Descubre todo el proceso paso a paso y los resultados finales.",
+    views: "5.6K",
+    date: "1 month ago",
+    thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/maxresdefault.jpg",
+  }
 
   // Update the featured videos with correct YouTube IDs
   const featuredVideos = [
@@ -185,7 +200,7 @@ export default function Home() {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "/facundo.png",
+      image: "https://landingfacundoperez.vercel.app/logo.png",
       relatedVideos: [
         {
           id: "QBdGTB9K42U",
@@ -272,372 +287,384 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-red-600 to-amber-500">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-red-700/90 backdrop-blur-sm shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            {/* Replace with actual logo or use a placeholder */}
-            <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo Facundo Perez" />
-            <h1 className="text-2xl font-bold text-amber-400">Facundo Perez</h1>
-          </div>
+    <main className="min-h-screen cream-bg">
+      {/* Background blur image */}
+      <div className="bg-blur"></div>
 
-          <nav className="hidden md:block">
-            <ul className="flex gap-6">
-              <li>
-                <a href="#inicio" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a href="#destacados" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Destacados
-                </a>
-              </li>
-              <li>
-                <a href="#sobre-mi" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Sobre Mí
-                </a>
-              </li>
-              <li>
-                <a href="#casita-rural" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Casita Rural
-                </a>
-              </li>
-              <li>
-                <a href="#gente-con-pasion" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Gente con Pasión
-                </a>
-              </li>
-              <li>
-                <a href="#viajes-en-moto" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Viajes en Moto
-                </a>
-              </li>
-              <li>
-                <a href="#contacto" className="text-amber-400 hover:text-amber-300 transition-colors">
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <div className="md:hidden">
-            <MobileMenu />
-          </div>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section id="inicio" className="py-16 md:py-24 bg-gradient-to-r from-red-700 to-red-600">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex flex-col items-center mb-8">
-            {/* Replace with actual profile image or use a placeholder */}
-            <img
-              src="/facu.png"
-              alt="Facundo Perez"
-              width={150}
-              height={150}
-              className="rounded-full border-4 border-amber-400 mb-4"
-            />
-            <h2 className="text-3xl md:text-5xl font-bold text-amber-400 mb-2">Facundo Perez</h2>
-            <p className="text-xl md:text-2xl text-amber-300 max-w-3xl mx-auto">
-              Viajero, constructor y contador de historias
-            </p>
-            <div className="flex items-center gap-2 mt-2">
-              <span className="bg-red-800 text-amber-300 px-3 py-1 rounded-full text-sm font-medium">
-                10K suscriptores
-              </span>
-              <span className="bg-red-800 text-amber-300 px-3 py-1 rounded-full text-sm font-medium">172 videos</span>
-            </div>
-          </div>
-
-          <p className="text-lg md:text-xl text-amber-100 max-w-3xl mx-auto mb-8">
-            ¡Hola! Soy Facu y recorro Argentina en moto 🏍️ compartiendo historias, construyendo mi casita rural y
-            mostrando gente con pasión por lo que hace.
-          </p>
-
-          <SocialLinks />
-
-          <div className="mt-8">
-            <a
-              href="https://www.youtube.com/@faqundoperez"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-full font-medium transition-colors"
-            >
-              <Youtube className="h-5 w-5" />
-              Suscribirse
+      <div className="content-wrapper">
+        {/* Header */}
+        <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" className="flex items-center gap-3">
+              {/* Logo is now clickable and redirects to home */}
+              <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo Facundo Perez" />
+              <h1 className="text-2xl font-bold text-gray-600">Facundo Perez</h1>
             </a>
-          </div>
-        </div>
-      </section>
 
-      {/* Featured Videos Section */}
-      <section id="destacados" className="py-16 md:py-24 bg-red-800">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 text-center mb-12">Videos Destacados</h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {featuredVideos.map((video, index) => (
-              <FeaturedVideoCard
-                key={index}
-                id={video.id}
-                title={video.title}
-                description={video.description}
-                views={video.views}
-                date={video.date}
-                thumbnail={video.thumbnail}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Sections */}
-      <section id="sobre-mi" className="py-16 md:py-24 bg-gradient-to-r from-red-700 to-red-600">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 text-center mb-12">Sobre Mí</h2>
-
-          {aboutSections.map((section, index) => (
-            <AboutSection
-              key={index}
-              title={section.title}
-              content={section.content}
-              image={section.image}
-              imagePosition={index % 2 === 0 ? "right" : "left"}
-              relatedVideos={section.relatedVideos}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Casita Rural Videos Section */}
-      <section id="casita-rural" className="py-16 md:py-24 bg-red-800">
-        <div className="container mx-auto px-4">
-          <VideoSection
-            title="Haciendo Nuestra Casita Rural 🏡"
-            description="En esta playlist te cuento cómo desarrollamos nuestro Proyecto de vivienda 🏡 en un pueblito rural y alejado de la ciudad 🏙️, de acuerdo a nuestras posibilidades económicas 🤑"
-            videos={casitaRuralVideos}
-          />
-        </div>
-      </section>
-
-      {/* Gente con Pasión Videos Section */}
-      <section id="gente-con-pasion" className="py-16 md:py-24 bg-gradient-to-r from-red-700 to-red-600">
-        <div className="container mx-auto px-4">
-          <VideoSection
-            title="Gente con Pasión 🔥"
-            description="Historias de quienes viven con pasión por su oficio y su trabajo. Desde mecánicos hasta revendedores de autos, pasando por artesanos, emprendedores y más. En esta serie recorremos Argentina conociendo personas inspiradoras."
-            videos={genteConPasionVideos}
-          />
-        </div>
-      </section>
-
-      {/* Viajes en Moto Videos Section */}
-      <section id="viajes-en-moto" className="py-16 md:py-24 bg-red-800">
-        <div className="container mx-auto px-4">
-          <VideoSection
-            title="Viajes en Moto por Argentina 🏍️"
-            description="Recorriendo los paisajes más impresionantes de Argentina en motocicleta. Desde la Patagonia hasta el Norte, pasando por la cordillera de los Andes y la costa atlántica."
-            videos={viajesEnMotoVideos}
-          />
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contacto" className="py-16 md:py-24 bg-gradient-to-r from-red-700 to-red-600">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 text-center mb-12">Contáctame</h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-red-800 rounded-xl p-8 shadow-lg border border-amber-500">
-              <h3 className="text-2xl font-bold text-amber-400 mb-6">Información de Contacto</h3>
-
-              <div className="space-y-4 text-amber-100">
-                <p className="flex items-center gap-3">
-                  <MessageCircle className="text-amber-400" />
-                  <span>WhatsApp: </span>
-                  <a href={whatsappUrl} className="text-amber-400 hover:underline">
-                    {whatsappNumber}
-                  </a>
-                </p>
-
-                <p className="flex items-center gap-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-amber-400"
-                  >
-                    <rect width="20" height="16" x="2" y="4" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <span>Email: </span>
-                  <a href="mailto:contacto@facundoperez.com" className="text-amber-400 hover:underline">
-                    contacto@facundoperez.com
-                  </a>
-                </p>
-              </div>
-
-              <div className="mt-10">
-                <h3 className="text-2xl font-bold text-amber-400 mb-6">Sígueme</h3>
-
-                <SocialLinks />
-              </div>
-            </div>
-
-            <div className="bg-red-800 rounded-xl p-8 shadow-lg border border-amber-500">
-              <h3 className="text-2xl font-bold text-amber-400 mb-6">Envíame un Mensaje</h3>
-              <ContactForm whatsappNumber={whatsappNumber} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-red-900 text-amber-100 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Column 1: About */}
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                {/* Replace with actual logo or use a placeholder */}
-                <img
-                  src="https://via.placeholder.com/50"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                  alt="Logo Facundo Perez"
-                />
-                <h2 className="text-xl font-bold text-amber-400">Facundo Perez</h2>
-              </div>
-              <p className="text-amber-200 mb-4">
-                Viajero, constructor y contador de historias. Recorriendo Argentina en moto y compartiendo experiencias
-                únicas.
-              </p>
-              <p className="text-amber-200 mb-4">
-                <span className="font-semibold">10K</span> suscriptores • <span className="font-semibold">172</span>{" "}
-                videos
-              </p>
-              <SocialLinks />
-            </div>
-
-            {/* Column 2: Quick Links */}
-            <div>
-              <h3 className="text-lg font-bold text-amber-400 mb-4">Enlaces Rápidos</h3>
-              <ul className="space-y-2">
+            <nav className="hidden md:block">
+              <ul className="flex gap-6">
                 <li>
-                  <a href="#inicio" className="text-amber-200 hover:text-amber-300 transition-colors">
-                    Inicio
+                  <a href="#destacados" className="text-gray-600 hover:text-gray-800 transition-colors">
+                    Destacados
                   </a>
                 </li>
                 <li>
-                  <a href="#destacados" className="text-amber-200 hover:text-amber-300 transition-colors">
-                    Videos Destacados
+                  <a href="#ultimo-video" className="text-gray-600 hover:text-gray-800 transition-colors">
+                    Último Video
                   </a>
                 </li>
                 <li>
-                  <a href="#sobre-mi" className="text-amber-200 hover:text-amber-300 transition-colors">
+                  <a href="#sobre-mi" className="text-gray-600 hover:text-gray-800 transition-colors">
                     Sobre Mí
                   </a>
                 </li>
                 <li>
-                  <a href="#contacto" className="text-amber-200 hover:text-amber-300 transition-colors">
-                    Contacto
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/@faqundoperez"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-amber-200 hover:text-amber-300 transition-colors"
-                  >
-                    Canal de YouTube
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 3: Categories */}
-            <div>
-              <h3 className="text-lg font-bold text-amber-400 mb-4">Categorías</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#casita-rural" className="text-amber-200 hover:text-amber-300 transition-colors">
+                  <a href="#casita-rural" className="text-gray-600 hover:text-gray-800 transition-colors">
                     Casita Rural
                   </a>
                 </li>
                 <li>
-                  <a href="#gente-con-pasion" className="text-amber-200 hover:text-amber-300 transition-colors">
+                  <a href="#gente-con-pasion" className="text-gray-600 hover:text-gray-800 transition-colors">
                     Gente con Pasión
                   </a>
                 </li>
                 <li>
-                  <a href="#viajes-en-moto" className="text-amber-200 hover:text-amber-300 transition-colors">
+                  <a href="#viajes-en-moto" className="text-gray-600 hover:text-gray-800 transition-colors">
                     Viajes en Moto
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.youtube.com/@faqundoperez/playlists"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-amber-200 hover:text-amber-300 transition-colors"
-                  >
-                    Todas las Playlists
+                  <a href="#bitacora-podcast" className="text-gray-600 hover:text-gray-800 transition-colors">
+                    Bitácora Podcast
+                  </a>
+                </li>
+                <li>
+                  <a href="#contacto" className="text-gray-600 hover:text-gray-800 transition-colors">
+                    Contacto
                   </a>
                 </li>
               </ul>
-            </div>
+            </nav>
 
-            {/* Column 4: Newsletter */}
-            <div>
-              <h3 className="text-lg font-bold text-amber-400 mb-4">Suscríbete al Newsletter</h3>
-              <p className="text-amber-200 mb-4">
-                Recibe notificaciones sobre nuevos videos y actualizaciones de nuestros proyectos.
+            <div className="md:hidden">
+              <MobileMenu />
+            </div>
+          </div>
+        </header>
+
+        {/* Hero Section */}
+        <section id="inicio" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4 text-center">
+            <div className="flex flex-col items-center mb-8">
+              {/* Replace with actual profile image or use a placeholder */}
+              <img
+                src="/facu.png"
+                alt="Facundo Perez"
+                width={150}
+                height={150}
+                className="rounded-full border-4 border-white mb-4"
+              />
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-600 mb-2">Facundo Perez</h2>
+              <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto">
+                Viajero, constructor y contador de historias
               </p>
-              <form className="space-y-2">
-                <input
-                  type="email"
-                  placeholder="Tu correo electrónico"
-                  className="w-full px-4 py-2 rounded-md bg-red-800 border border-amber-500 text-amber-100 placeholder:text-amber-300/50 focus:outline-none focus:ring-2 focus:ring-amber-400"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-400 text-red-900 font-medium py-2 px-4 rounded-md transition-colors"
-                >
-                  Suscribirse
-                </button>
-              </form>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="bg-white text-gray-600 px-3 py-1 rounded-full text-sm font-medium">
+                  10K suscriptores
+                </span>
+                <span className="bg-white text-gray-600 px-3 py-1 rounded-full text-sm font-medium">172 videos</span>
+              </div>
             </div>
-          </div>
 
-          <div className="border-t border-amber-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-amber-300 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Facundo Perez. Todos los derechos reservados.
+            <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto mb-8">
+              ¡Hola! Soy Facu y recorro Argentina en moto 🏍️ compartiendo historias, construyendo mi casita rural y
+              mostrando gente con pasión por lo que hace.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-sm text-amber-300 hover:text-amber-400 transition-colors">
-                Política de Privacidad
-              </a>
-              <a href="#" className="text-sm text-amber-300 hover:text-amber-400 transition-colors">
-                Términos de Servicio
+
+            <SocialLinks />
+
+            <div className="mt-8">
+              <a
+                href="https://www.youtube.com/@faqundoperez"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-full font-medium transition-colors"
+              >
+                <Youtube className="h-5 w-5" />
+                Suscribirse
               </a>
             </div>
           </div>
-        </div>
-      </footer>
+        </section>
 
-      {/* WhatsApp Floating Button */}
-      <WhatsAppButton whatsappNumber={whatsappNumber} />
+        {/* Latest Video Section */}
+        <section id="ultimo-video" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 text-center mb-12">Último Video</h2>
+            <div className="max-w-4xl mx-auto">
+              <LatestVideo
+                id={latestVideo.id}
+                title={latestVideo.title}
+                description={latestVideo.description}
+                views={latestVideo.views}
+                date={latestVideo.date}
+                thumbnail={latestVideo.thumbnail}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Videos Section */}
+        <section id="destacados" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 text-center mb-12">Videos Destacados</h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {featuredVideos.map((video, index) => (
+                <FeaturedVideoCard
+                  key={index}
+                  id={video.id}
+                  title={video.title}
+                  description={video.description}
+                  views={video.views}
+                  date={video.date}
+                  thumbnail={video.thumbnail}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* About Sections */}
+        <section id="sobre-mi" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 text-center mb-12">Sobre Mí</h2>
+
+            {aboutSections.map((section, index) => (
+              <AboutSection
+                key={index}
+                title={section.title}
+                content={section.content}
+                image={section.image}
+                imagePosition={index % 2 === 0 ? "right" : "left"}
+                relatedVideos={section.relatedVideos}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Casita Rural Videos Section */}
+        <section id="casita-rural" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <VideoSection
+              title="Haciendo Nuestra Casita Rural 🏡"
+              description="En esta playlist te cuento cómo desarrollamos nuestro Proyecto de vivienda 🏡 en un pueblito rural y alejado de la ciudad 🏙️, de acuerdo a nuestras posibilidades económicas 🤑"
+              videos={casitaRuralVideos}
+            />
+          </div>
+        </section>
+
+        {/* Gente con Pasión Videos Section */}
+        <section id="gente-con-pasion" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <VideoSection
+              title="Gente con Pasión 🔥"
+              description="Historias de quienes viven con pasión por su oficio y su trabajo. Desde mecánicos hasta revendedores de autos, pasando por artesanos, emprendedores y más. En esta serie recorremos Argentina conociendo personas inspiradoras."
+              videos={genteConPasionVideos}
+            />
+          </div>
+        </section>
+
+        {/* Viajes en Moto Videos Section */}
+        <section id="viajes-en-moto" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <VideoSection
+              title="Viajes en Moto por Argentina 🏍️"
+              description="Recorriendo los paisajes más impresionantes de Argentina en motocicleta. Desde la Patagonia hasta el Norte, pasando por la cordillera de los Andes y la costa atlántica."
+              videos={viajesEnMotoVideos}
+            />
+          </div>
+        </section>
+
+        {/* Bitácora Podcast Section */}
+        <section id="bitacora-podcast" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <PodcastSection />
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contacto" className="py-16 md:py-24 cream-bg">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-600 text-center mb-12">Contáctame</h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-600 mb-6">Información de Contacto</h3>
+
+                <div className="space-y-4 text-gray-500">
+                  <p className="flex items-center gap-3">
+                    <MessageCircle className="text-gray-600" />
+                    <span>WhatsApp: </span>
+                    <a href={whatsappUrl} className="text-gray-600 hover:underline">
+                      {whatsappNumber}
+                    </a>
+                  </p>
+
+                  <p className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-600"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <span>Email: </span>
+                    <a href={`mailto:${emailAddress}`} className="text-gray-600 hover:underline">
+                      {emailAddress}
+                    </a>
+                  </p>
+                </div>
+
+                <div className="mt-10">
+                  <h3 className="text-2xl font-bold text-gray-600 mb-6">Sígueme</h3>
+
+                  <SocialLinks />
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-600 mb-6">Envíame un Mensaje</h3>
+                <ContactForm emailAddress={emailAddress} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-gray-800 text-white py-12">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Column 1: About */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  {/* Replace with actual logo or use a placeholder */}
+                  <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo Facundo Perez" />
+                  <h2 className="text-xl font-bold text-white">Facundo Perez</h2>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Viajero, constructor y contador de historias. Recorriendo Argentina en moto y compartiendo
+                  experiencias únicas.
+                </p>
+                <p className="text-gray-300 mb-4">
+                  <span className="font-semibold">10K</span> suscriptores • <span className="font-semibold">172</span>{" "}
+                  videos
+                </p>
+                <SocialLinks />
+              </div>
+
+              {/* Column 2: Quick Links */}
+              <div>
+                <h3 className="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="#inicio" className="text-gray-300 hover:text-white transition-colors">
+                      Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#destacados" className="text-gray-300 hover:text-white transition-colors">
+                      Videos Destacados
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#sobre-mi" className="text-gray-300 hover:text-white transition-colors">
+                      Sobre Mí
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contacto" className="text-gray-300 hover:text-white transition-colors">
+                      Contacto
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@faqundoperez"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-white transition-colors"
+                    >
+                      Canal de YouTube
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 3: Categories */}
+              <div>
+                <h3 className="text-lg font-bold text-white mb-4">Categorías</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="#casita-rural" className="text-gray-300 hover:text-white transition-colors">
+                      Casita Rural
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#gente-con-pasion" className="text-gray-300 hover:text-white transition-colors">
+                      Gente con Pasión
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#viajes-en-moto" className="text-gray-300 hover:text-white transition-colors">
+                      Viajes en Moto
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#bitacora-podcast" className="text-gray-300 hover:text-white transition-colors">
+                      Bitácora Podcast
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@faqundoperez/playlists"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-white transition-colors"
+                    >
+                      Todas las Playlists
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+              <p className="text-sm text-gray-400 mb-4 md:mb-0">
+                &copy; {new Date().getFullYear()} Facundo Perez. Todos los derechos reservados.
+              </p>
+              <div className="flex gap-4">
+                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Política de Privacidad
+                </a>
+                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  Términos de Servicio
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        {/* YouTube Floating Button */}
+        <YouTubeButton channelUrl={youtubeChannelUrl} />
+      </div>
     </main>
   )
 }

@@ -14,25 +14,25 @@ body {
 
 @layer base {
   :root {
-    --background: 0 72% 51%; /* Red */
-    --foreground: 43 96% 56%; /* Amber */
-    --card: 0 72% 51%;
-    --card-foreground: 43 96% 56%;
-    --popover: 0 72% 51%;
-    --popover-foreground: 43 96% 56%;
-    --primary: 43 96% 56%; /* Amber */
-    --primary-foreground: 0 72% 51%; /* Red */
-    --secondary: 0 72% 51%; /* Red */
-    --secondary-foreground: 43 96% 56%; /* Amber */
-    --muted: 0 50% 40%; /* Red darker */
-    --muted-foreground: 43 70% 70%; /* Amber lighter */
-    --accent: 43 70% 50%; /* Amber darker */
-    --accent-foreground: 0 72% 51%; /* Red */
+    --background: 43 70% 88%; /* #f2e6cf */
+    --foreground: 0 0% 40%; /* Light gray */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 40%; /* Light gray */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 40%; /* Light gray */
+    --primary: 0 0% 20%; /* Dark Gray */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 43 70% 88%; /* #f2e6cf */
+    --secondary-foreground: 0 0% 40%; /* Light gray */
+    --muted: 43 70% 88%; /* #f2e6cf */
+    --muted-foreground: 0 0% 45%; /* Medium Gray */
+    --accent: 43 70% 88%; /* #f2e6cf */
+    --accent-foreground: 0 0% 40%; /* Light gray */
     --destructive: 0 84.2% 60.2%; /* Red for alerts */
     --destructive-foreground: 0 0% 98%;
-    --border: 43 96% 56%; /* Amber */
-    --input: 43 96% 56%;
-    --ring: 43 96% 56%; /* Amber */
+    --border: 0 0% 90%; /* Light Gray */
+    --input: 0 0% 90%;
+    --ring: 0 0% 80%; /* Gray */
     --radius: 0.5rem;
   }
 }
@@ -44,5 +44,49 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=2000");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.podcast-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.podcast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.book-card {
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+.cream-bg {
+  background-color: #f2e6cf;
+}
+
+.white-card {
+  background-color: white;
 }
 
