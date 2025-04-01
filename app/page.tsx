@@ -11,195 +11,195 @@ export default function Home() {
   const whatsappNumber = "+5491163604558"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
-  // Featured videos with actual YouTube embed IDs
+  // Update the featured videos with correct YouTube IDs
   const featuredVideos = [
     {
-      id: "6wlC91nseIM", // Example YouTube video ID
+      id: "6wlC91nseIM",
       title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
       description: "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina.",
-      views: "5.6K", 
+      views: "5.6K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg",
     },
     {
-      id: "QBdGTB9K42U", // Example YouTube video ID
+      id: "QBdGTB9K42U",
       title: "TRABAJAMOS a Full en el Proyecto RURAL ¡Y el RESULTADO es INCREÍBLE!",
       description: "Un día productivo trabajando en nuestra casita rural, mostrando todo el proceso y los avances.",
       views: "8.2K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg",
     },
     {
-      id: "g_DY8nygLb0", // Example YouTube video ID
+      id: "g_DY8nygLb0",
       title: "We build a Wooden Wall! - Rurallife Project",
       description: "Construimos una pared de madera para nuestra casa rural, mostrando todo el proceso paso a paso.",
       views: "15K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg",
     },
   ]
 
-  // Casita Rural videos with actual YouTube embed IDs
+  // Update Casita Rural videos with correct YouTube IDs
   const casitaRuralVideos = [
     {
-      id: "6wlC91nseIM", // Example YouTube video ID
+      id: "6wlC91nseIM",
       title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
       description: "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina.",
-      views: "5.6K", 
+      views: "5.6K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg",
     },
     {
-      id: "QBdGTB9K42U", // Example YouTube video ID
+      id: "QBdGTB9K42U",
       title: "TRABAJAMOS a Full en el Proyecto RURAL ¡Y el RESULTADO es INCREÍBLE!",
       description: "Un día productivo trabajando en nuestra casita rural, mostrando todo el proceso y los avances.",
       views: "8.2K",
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg",
     },
     {
-      id: "g_DY8nygLb0", // Example YouTube video ID
+      id: "g_DY8nygLb0",
       title: "We build a Wooden Wall! - Rurallife Project",
       description: "Construimos una pared de madera para nuestra casa rural, mostrando todo el proceso paso a paso.",
       views: "15K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg",
     },
     {
-      id: "HAaQNvzMnzs", // Example YouTube video ID
+      id: "HAaQNvzMnzs",
       title: "Desafío Bajo el Sol! Trabajando en Nuestra Casita Rural",
       description: "Trabajando bajo el intenso sol para avanzar en nuestro proyecto de casa rural.",
       views: "10K",
       date: "2 months ago",
-      thumbnail: "https://i.ytimg.com/vi/HAaQNvzMnzs/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/HAaQNvzMnzs/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "Ks0cLYeJtJY",
       title: "¡INCREÍBLE Cambio! PINTAMOS 🧠 Nuestra CASITA RURAL",
       description: "Transformamos completamente nuestra casita rural con una nueva capa de pintura.",
       views: "13K",
       date: "3 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/Ks0cLYeJtJY/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "XZJZgwGBHXE",
       title: "¿Misión Imposible? AIRE Acondicionado en Nuestra CASITA RURAL",
       description: "Instalamos aire acondicionado en nuestra casita rural, un desafío que parecía imposible.",
       views: "11K",
       date: "4 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/XZJZgwGBHXE/hqdefault.jpg",
     },
   ]
 
-  // Gente con Pasión videos with actual YouTube embed IDs
+  // Update Gente con Pasión videos with unique YouTube IDs
   const genteConPasionVideos = [
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "7yLxxyzGiko",
       title: "ARTESANO en el CAMPO: Una Vida SIMPLE y FELIZ",
       description: "Conocemos a un artesano que decidió vivir en el campo, llevando una vida simple y feliz.",
       views: "7.8K",
       date: "5 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/7yLxxyzGiko/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "9bZkp7q19f0",
       title: "VIVEN de lo que AMAN: Granja AUTOSUSTENTABLE",
       description: "Visitamos una granja autosustentable donde sus dueños viven de lo que aman hacer.",
       views: "9.3K",
       date: "6 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "kJQP7kiw5Fk",
       title: "COMPRAR CASA SIN DINERO: La Historia de Juan",
       description: "Juan nos cuenta cómo logró comprar su casa sin tener dinero, a través de trueques e ingenio.",
       views: "12.5K",
       date: "7 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "JGwWNGJdvx8",
       title: "INVERTIR en un PUEBLO CHICO: ¿Conviene?",
       description: "Analizamos si conviene invertir en pueblos pequeños, con testimonios de quienes lo hicieron.",
       views: "8.7K",
       date: "8 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "pRpeEdMmmQ0",
       title: "MECÁNICO de MOTOS en la MONTAÑA",
       description: "Conocemos a un mecánico de motos que decidió establecer su taller en plena montaña.",
       views: "6.9K",
       date: "9 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/pRpeEdMmmQ0/hqdefault.jpg",
     },
   ]
 
-  // Viajes en Moto videos with actual YouTube embed IDs
+  // Update Viajes en Moto videos with unique YouTube IDs
   const viajesEnMotoVideos = [
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "fJ9rUzIMcZQ",
       title: "CRUZANDO los ANDES en MOTO",
       description: "Nuestra aventura cruzando la cordillera de los Andes en motocicleta.",
       views: "18.2K",
       date: "10 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "YR5ApYxkU-U",
       title: "RUTA 40: El NORTE ARGENTINO en MOTO",
       description: "Recorremos el norte argentino por la mítica Ruta 40 en nuestra motocicleta.",
       views: "15.7K",
       date: "11 months ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/YR5ApYxkU-U/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "2zNSgSzhBfM",
       title: "PATAGONIA: Los PAISAJES más INCREÍBLES",
       description: "Descubrimos los paisajes más impresionantes de la Patagonia argentina en moto.",
       views: "20.3K",
       date: "1 year ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/2zNSgSzhBfM/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "aJOTlE1K90k",
       title: "CATARATAS del IGUAZÚ en MOTO",
       description: "Nuestro viaje en moto hasta las impresionantes Cataratas del Iguazú.",
       views: "14.8K",
       date: "1 year ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/aJOTlE1K90k/hqdefault.jpg",
     },
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "V1bFr2SWP1I",
       title: "MENDOZA: Viñedos y MONTAÑAS en MOTO",
       description: "Recorremos los viñedos y montañas de Mendoza en nuestra motocicleta.",
       views: "12.1K",
       date: "1 year ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/V1bFr2SWP1I/hqdefault.jpg",
     },
   ]
 
-  // About sections with related videos
+  // Update About sections with related videos
   const aboutSections = [
     {
       title: "¿Quién es Facundo Perez?",
       content:
         "Soy Facundo, un apasionado viajero y creador de contenido argentino. Mi aventura comenzó hace algunos años cuando decidí recorrer Argentina en motocicleta, documentando cada kilómetro del camino. Lo que empezó como un simple viaje se transformó en un estilo de vida y en un canal de YouTube donde comparto mis experiencias, aprendizajes y las historias de personas increíbles que encuentro en el camino.",
-      image: "https://landingfacundoperez.vercel.app/logo.png", // Example profile image
+      image: "https://landingfacundoperez.vercel.app/logo.png",
       relatedVideos: [
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "QBdGTB9K42U",
           title: "Mi Historia: De la Ciudad a la Ruta",
           views: "25.3K",
           date: "2 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/QBdGTB9K42U/hqdefault.jpg",
         },
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "6wlC91nseIM",
           title: "¿Por qué Elegí Viajar en Moto?",
           views: "18.7K",
           date: "2 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg",
         },
       ],
     },
@@ -207,21 +207,21 @@ export default function Home() {
       title: "Nuestra Casita Rural",
       content:
         "Uno de los proyectos más importantes que comparto en mi canal es la construcción de nuestra casita rural. Junto con mi pareja, decidimos establecernos en un pequeño pueblo alejado de la ciudad para construir nuestro hogar con nuestras propias manos. Este proyecto representa nuestro sueño de una vida más simple, conectada con la naturaleza y autosustentable. A través de mis videos, muestro cada etapa del proceso, desde la compra del terreno hasta los detalles más pequeños de la construcción.",
-      image: "https://images.unsplash.com/photo-1570793005386-840846445fed?q=80&w=1000", // Example rural house image
+      image: "https://images.unsplash.com/photo-1570793005386-840846445fed?q=80&w=1000",
       relatedVideos: [
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "g_DY8nygLb0",
           title: "Compramos un TERRENO en el CAMPO",
           views: "32.1K",
           date: "1.5 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/g_DY8nygLb0/hqdefault.jpg",
         },
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "HAaQNvzMnzs",
           title: "Primeros PLANOS de Nuestra CASA",
           views: "28.5K",
           date: "1.5 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/HAaQNvzMnzs/hqdefault.jpg",
         },
       ],
     },
@@ -229,21 +229,21 @@ export default function Home() {
       title: "Gente con Pasión",
       content:
         "Una de las secciones más queridas de mi canal es 'Gente con Pasión', donde entrevisto a personas que han decidido vivir de lo que aman. Desde artesanos hasta emprendedores rurales, mecánicos de montaña y agricultores autosustentables, estas historias buscan inspirar a otros a seguir sus sueños y demostrar que existen múltiples formas de vida más allá del camino convencional.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000", // Example people with passion image
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000",
       relatedVideos: [
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "7yLxxyzGiko",
           title: "CARPINTERO de MONTAÑA: 40 Años de Oficio",
           views: "15.9K",
           date: "1 year ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/7yLxxyzGiko/hqdefault.jpg",
         },
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "9bZkp7q19f0",
           title: "PANADERÍA ARTESANAL: Un Negocio Familiar",
           views: "14.2K",
           date: "1 year ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg",
         },
       ],
     },
@@ -251,21 +251,21 @@ export default function Home() {
       title: "Viajes en Moto",
       content:
         "Mi pasión por las motocicletas y los viajes me ha llevado a recorrer gran parte de Argentina, desde la Patagonia hasta el Norte, pasando por la cordillera de los Andes y la costa atlántica. En mis videos de viajes comparto no solo los paisajes impresionantes, sino también los desafíos, las reparaciones en ruta, los encuentros con locales y todas las aventuras que surgen al viajar sobre dos ruedas.",
-      image: "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=1000", // Example motorcycle travel image
+      image: "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=1000",
       relatedVideos: [
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "fJ9rUzIMcZQ",
           title: "PREPARANDO la MOTO para un VIAJE LARGO",
           views: "22.7K",
           date: "1.5 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
         },
         {
-          id: "dQw4w9WgXcQ", // Example YouTube video ID
+          id: "YR5ApYxkU-U",
           title: "EQUIPO BÁSICO para VIAJAR en MOTO",
           views: "19.8K",
           date: "1.5 years ago",
-          thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+          thumbnail: "https://i.ytimg.com/vi/YR5ApYxkU-U/hqdefault.jpg",
         },
       ],
     },
@@ -278,13 +278,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             {/* Replace with actual logo or use a placeholder */}
-            <img
-              src="/logo.png"
-              width={50}
-              height={50}
-              className="rounded-full"
-              alt="Logo Facundo Perez"
-            />
+            <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo Facundo Perez" />
             <h1 className="text-2xl font-bold text-amber-400">Facundo Perez</h1>
           </div>
 
