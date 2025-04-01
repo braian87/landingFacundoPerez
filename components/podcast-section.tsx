@@ -62,7 +62,7 @@ export default function PodcastSection() {
             </p>
             <div className="flex justify-center mb-4">
               <img
-                src="https://m.media-amazon.com/images/I/41nN+ynYYaL._SY445_SX342_.jpg"
+                src="/portada.png"
                 alt="Portada del libro"
                 className="h-40 object-contain rounded-md shadow-sm"
               />
