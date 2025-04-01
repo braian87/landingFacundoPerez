@@ -51,8 +51,7 @@ ${formData.message}
       // Open Gmail with pre-filled content
       const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`
 
-      // Try to open Gmail first
-      window.open(gmailUrl, "_blank")
+      
 
       // Also provide a fallback to the default mailto
       setTimeout(() => {
