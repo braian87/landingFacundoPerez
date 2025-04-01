@@ -14,12 +14,12 @@ export default function Home() {
   // Featured videos with actual YouTube embed IDs
   const featuredVideos = [
     {
-      id: "dQw4w9WgXcQ", // Example YouTube video ID
+      id: "6wlC91nseIM", // Example YouTube video ID
       title: "¡Restauración Total! PINTAMOS Hasta la MOTO",
       description: "En este video restauramos completamente nuestra moto para continuar nuestro viaje por Argentina.",
-      views: "5.6K",
+      views: "5.6K", 
       date: "1 month ago",
-      thumbnail: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Using actual YouTube thumbnail
+      thumbnail: "https://i.ytimg.com/vi/6wlC91nseIM/hqdefault.jpg", // Using actual YouTube thumbnail
     },
     {
       id: "dQw4w9WgXcQ", // Example YouTube video ID
