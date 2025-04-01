@@ -62,7 +62,7 @@ ${formData.message}
       // Show success message
       setSubmitStatus({
         success: true,
-        message: "¡Gracias por tu mensaje! Se abrirá tu cliente de correo para enviar el mensaje.",
+        message: "¡Gracias por tu mensaje! Se abrirá su correo para enviar el mail.",
       })
 
       // Reset form after successful submission
